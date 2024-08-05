@@ -1,8 +1,16 @@
 const getBtn = document.getElementById("getBtn");
 const password = document.getElementById("textContent");
-let pw;
-let random = (Math.random() + 1).toString(36).substring(7);
+function generate() {
+    let pass = '';
+    let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
+        'abcdefghijklmnopqrstuvwxyz0123456789@#$';
 
-function generate(){
-    password.textContent = random;
+    for (let i = 1; i <= 8; i++) {
+        let char = Math.floor(Math.random()
+            * str.length + 1);
+
+        pass += str.charAt(char)
+    }
+    password.textContent = pass;
+    return pass;
 }
