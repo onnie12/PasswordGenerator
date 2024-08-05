@@ -1,0 +1,35 @@
+body{
+    background-color: rgba(128, 128, 128, 0.555);
+}
+#main{
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+
+}
+h1{
+    padding: 10px;
+    font-family: "Encode Sans", sans-serif, Arial;
+}
+#textContent{
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 2em;
+    font-family: "Encode Sans", sans-serif, Arial;
+}
+#genBtn{
+    font-family: "Encode Sans", sans-serif, Arial;
+    background-color: rgba(0, 0, 0, 0.247);
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+#genBtn:hover{
+    background-color: rgba(0, 0, 0, 0.349);
+}
